@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    height: 90px; /* Adjust as needed */
+    padding: 5px 20px; /* Reduce padding */
+    background: url('images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar a {
+    color: black; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Ensures logo & text align properly */
+    gap: 10px; /* Space between logo and text */
+}
+
+.navbar-brand img {
+    height: 80px; /* Adjust image size */
+    width: auto;
+}
+
+.navbar-brand span {
+    font-family: 'Poppins', sans-serif; /* Change font */
+    font-size: 24px; /* Adjust size */
+    font-weight: 700; /* Bold */
+    color: white; /* Text color */
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold !important;
+    color: black !important; /* Default color */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link.current {
+    color: white !important; /* Changes color when hovered or active */
+}
+
+/* Add hover effect for the accommodation cards */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow */
+}
+
+/* Section Styles */
+.container {
+    margin-top: 30px;
+}
+
+/* Image Styles */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Accommodation Cards */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Booking Form */
+.booking-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background: url('images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1, p { 
+    color: white;  /* Change text to white */
+    font-size: 20px;  /* Adjust as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+
+h2, p { 
+    color: black;  /* Change text to white */
+    font-size: 35px;  /* Adjust as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+
+/* Background for index.html */
+.home-page {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Background for other pages */
+.other-page {
+    background-image: url('your-otherpage-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.attraction-box {
+    border: 2px solid #854836; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Space inside the box */
+    margin: 10px 0; /* Space between boxes */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+.attraction-box p {
+    font-size: 14px; /* Make the text smaller */
+    color: #854836; /* Slightly darker text for readability */
+}
+
+.attraction-box img {
+    width: 80%; /* Adjust percentage as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.homepage h1,
+.homepage h2,
+.homepage p {
+    color: white; /* Change to your preferred color */
+}
+
+h1, h2, p {
+    color: rgb(0, 0, 0); /* Your desired color */
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+.contact-section h2 {
+    color: black;
+    font-weight: bold;
+}
+.contact-section p {
+    color: #000000;
+}
+.contact-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #854836;
+    color: black; /* Make text black */
+}
+.contact-form .btn {
+    background: #854836;
+    color: white;
+    border: #854836;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 20px;
+    font-size: 25px; /* Reduced font size */
+    color: #854836 !important;
+    text-align: center; /* Centers the text */
+}
+.contact-info p {
+    margin: 3px 0;
+    font-size: 25px; /* Smaller text */
+    font-weight: 500; /* Medium weight for readability */
+}
+.contact-info a {
+    color: #854836 !important;
+    text-decoration: none;
+    font-size: 25px; /* Smaller email text */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .contact-info {
+        font-size: 12px;
+    }
+    .contact-info p, .contact-info a {
+        font-size: 12px;
+    }
+}
+
+.reviews-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.review {
+    border: 2px solid #854836;
+    border-radius: 10px;
+    background: white;
+    padding: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px; /* Smaller text */
+    font-weight: 400;
+    color: #854836;
+    margin: 10px auto;
+    max-width: 250px;
+}
+
+/* Hover effect for reviews section in contacts */
+.review {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review:hover {
+    transform: translateY(-5px); /* Moves the review slightly up */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    background-color: #fff5e6; /* Soft warm background on hover */
+}
+
+.stars {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.small-text {
+    font-size: 13px;
+    color: #555;
+}
+
+.reviewer {
+    font-weight: bold;
+    font-size: 12px;
+    color: #777;
+}
+
+.btn-success {
+    background-color: #854836 !important; /* Change to your preferred color */
+    border-color: #854836 !important;
+}
+
+.btn-success:hover {
+    background-color: #854836 !important; /* Darker shade for hover effect */
+    border-color: #854836 !important;
+}
+
+.card {
+    border: 2px solid #8B0000; /* Dark red border */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
+    border-color: #854836 /* Change border color */
+}
